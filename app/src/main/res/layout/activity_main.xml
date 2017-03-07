@@ -20,7 +20,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="number|numberDecimal"
         android:ems="10"
         android:layout_below="@+id/rmwlbl"
         android:layout_alignParentStart="true"
@@ -39,7 +39,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="number|numberDecimal"
         android:ems="10"
         android:id="@+id/rmhedit"
         android:layout_below="@+id/rmhlbl"

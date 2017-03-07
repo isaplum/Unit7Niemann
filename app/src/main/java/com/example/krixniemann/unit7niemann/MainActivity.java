@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onBtnClick(View view){
-        int width = Integer.parseInt(String.valueOf(rmwenter.getText()));
-        int height = Integer.parseInt(String.valueOf(rmhenter.getText()));
+        double width = Double.parseDouble(String.valueOf(rmwenter.getText()));
+        double height = Double.parseDouble(String.valueOf(rmhenter.getText()));
         Intent intent = new Intent(MainActivity.this, OtherActivity.class);
         intent.putExtra("Width", width);
         intent.putExtra("Height", height);
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             if (data.hasExtra("Flooring")) {
                 String result = data.getExtras().getString("Flooring");
                 if (result != null && result.length() > 0) {
-                    resulty.setText("Flooring : " + result);
+                    resulty.setText(result);
                     Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
                 }
             }

@@ -12,8 +12,8 @@ import android.widget.TextView;
 public class OtherActivity extends AppCompatActivity {
 
     TextView textViewData;
-    int width;
-    int height;
+    double width;
+    double height;
 
 
     @Override
@@ -24,8 +24,8 @@ public class OtherActivity extends AppCompatActivity {
         textViewData = (TextView) findViewById(R.id.txtDisplay);
 
         Bundle extras = getIntent().getExtras();
-        width = extras.getInt("Width");
-        height = extras.getInt("Height");
+        width = extras.getDouble("Width");
+        height = extras.getDouble("Height");
         textViewData.setText("Width is " + width + " the length is " + height + " and flooring needed is " +(width * height));
 
     }
